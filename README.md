@@ -20,7 +20,7 @@ Or you can manually install the required libraries (see the contents of the envi
 
 ### Run the pretrained model
 
-Start up [the Udacity self-driving simulator](https://github.com/udacity/self-driving-car-sim), choose a scene and press the Autonomous Mode button.  Then, run the model as follows:
+Start up [the Udacity self-driving simulator](https://github.com/udacity/self-driving-car-sim), choose a scene and press the "Autonomous Mode" button.  Then, run the model as follows:
 
 ```python
 python drive.py model.h5
@@ -28,7 +28,17 @@ python drive.py model.h5
 
 ### To train the model
 
-You'll need the data folder which contains the training images.
+First you'll need to generate the training data from simulator to train the model.
+
+To record the training data choose a scene and press "Training Mode"button.
+
+Press "R" to select the folder location to save training images. Now again press "R" to start recording.
+
+Drive the car around the track. Press "R" to stop recording and start generating training data from captured images.
+
+Copy/Paste the folder into project directory.
+
+Now run following command to start training on Neural Network.
 
 ```python
 python model.py
